@@ -19,5 +19,7 @@ VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
 EXPOSE 3000
 
 COPY ./run.sh /run.sh
+# copy content plugins folder 
+COPY plugins /var/lib/grafana/plugins/
 
 ENTRYPOINT ["/run.sh"]

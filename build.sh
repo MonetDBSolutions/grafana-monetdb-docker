@@ -19,4 +19,5 @@ else
 		--build-arg DOWNLOAD_URL=https://s3-us-west-2.amazonaws.com/grafana-releases/master/grafana_latest_amd64.deb \
 		--tag "monetdb/grafana:master" \
 		--no-cache=true .
+	docker tag monetdb/grafana:master monetdb/grafana:latest	
 fi
